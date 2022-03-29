@@ -1,2 +1,2 @@
 # fluffy-broccoli
-Random choise picker
+Random choice picker
