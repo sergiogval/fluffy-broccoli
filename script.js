@@ -31,11 +31,19 @@ function randomSelect() {
     const times = 30;
     const interval = setInterval(() => {
         const randomTag = pickRandomTag();
-        highlightTag(randomTag)
+        highlightTag(randomTag);
         setTimeout(() => {
             unhighlightTag(randomTag)
         }, 100);
     }, 100);
+
+setTimeout(() => {
+    clearInterval(interval)
+    setTimeout(() => {
+        const randomTag = pickRandomTag();
+        highlightTag(randomTag);
+    }, 100);
+}, Times * 100);
 }
 
 function pickRandomTag() {
