@@ -37,13 +37,13 @@ function randomSelect() {
         }, 100);
     }, 100);
 
-setTimeout(() => {
-    clearInterval(interval)
     setTimeout(() => {
-        const randomTag = pickRandomTag();
-        highlightTag(randomTag);
-    }, 100);
-}, Times * 100);
+        clearInterval(interval)
+        setTimeout(() => {
+            const randomTag = pickRandomTag();
+            highlightTag(randomTag);
+        }, 100);
+    }, Times * 100);
 }
 
 function pickRandomTag() {
